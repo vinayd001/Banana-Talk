@@ -13,9 +13,13 @@ btn_translate.addEventListener("click", function onClickTranslate() {
 
     // taking input
     var input_txt = txt_input.value
-    alert(input_txt);
+    
+    // alert(input_txt);
+    
     var translated_URL = server_URL + "?" + "text=" + input_txt
-    alert(translated_URL);
+    
+    // alert(translated_URL);
+    
     // calling server for processing
     fetch(translated_URL)
         .then(response => response.json())
